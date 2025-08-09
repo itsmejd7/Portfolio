@@ -38,8 +38,8 @@ const Portfolio = () => {
       category: 'News',
       description: 'Display news summary using NewsAi API with React and Tailwind CSS.',
       technologies: ['React', 'JavaScript', 'TailwindCSS', 'NewsAi API'],
-      githubLink: 'https://github.com/itsmejd7/Thunder-Ai',
-      liveLink: 'https://thunder-ai-amber.vercel.app/',
+      githubLink: 'https://github.com/itsmejd7/News-Ai',
+      liveLink: '',
       status: 'Completed',
       highlight: 'News Summary AI ChatBot',
       image: NewsAi

@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Typewriter } from 'react-simple-typewriter';
+import Jayesh_Dhande from '../assets/Jayesh_Dhande.pdf'
 
 const Hero = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -63,10 +64,10 @@ const Hero = () => {
 
         <div className={`flex justify-center items-center transform transition-all duration-1000 delay-1000 ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}`}>
           <a 
-            href="#resume" 
+            href={Jayesh_Dhande} 
             className="inline-flex items-center px-8 py-3 bg-gradient-to-r from-blue-600 to-purple-600 text-white font-semibold rounded-full hover:shadow-lg transition-all duration-300 transform hover:scale-105"
           >
-            <span>View Resume</span>
+            <span>  View Resume</span>
             <svg className="ml-2 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
             </svg>
