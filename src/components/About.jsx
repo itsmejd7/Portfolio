@@ -52,7 +52,7 @@ const About = () => {
             <div className="lg:col-span-2 space-y-6 md:space-y-8">
               <div className="space-y-4 md:space-y-6 text-gray-700 leading-relaxed text-base md:text-lg">
                 <p className="text-lg md:text-xl leading-relaxed">
-                  Hello! I'm <span className="font-semibold text-blue-600">Jayesh Dhande</span>, a passionate third-year B.E. Computer Engineering student at Sinhgad Academy of Engineering, Pune. With a strong academic foundation and a current CGPA of <span className="font-bold text-purple-600">8.33</span>, I'm dedicated to turning innovative ideas into reality through code.
+                  Hello! I'm <span className="font-semibold text-blue-600">Jayesh Dhande</span>, a passionate third-year B.E. Information Technology student at Sinhgad Academy of Engineering, Pune. With a strong academic foundation and a current CGPA of <span className="font-bold text-purple-600">8.33</span>, I'm dedicated to turning innovative ideas into reality through code.
                 </p>
                 
                 <p>
