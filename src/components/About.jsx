@@ -1,5 +1,5 @@
 import React from 'react';
-import Profileimg from '../assets/ProfileImg.jpg';
+import Profile from '../assets/Profile.jpg';
 
 const About = () => {
   return (
@@ -21,12 +21,13 @@ const About = () => {
 
         <div className="max-w-6xl mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 lg:gap-12 mb-12">
+            
             <div className="lg:col-span-1 flex justify-center lg:justify-start">
               <div className="relative">
                 <div className="w-64 h-64 md:w-80 md:h-80 bg-gradient-to-br from-blue-400 via-purple-500 to-pink-500 rounded-3xl p-1 shadow-2xl">
                   <div className="w-full h-full bg-white rounded-3xl overflow-hidden">
                     <img 
-                        src={Profileimg}
+                      src={Profile}
                       alt="Jayesh Dhande - IT Engineering Student"
                       className="w-full h-full object-cover object-center"
                       onError={(e) => {
@@ -51,21 +52,25 @@ const About = () => {
 
             <div className="lg:col-span-2 space-y-6 md:space-y-8">
               <div className="space-y-4 md:space-y-6 text-gray-700 leading-relaxed text-base md:text-lg">
+
                 <p className="text-lg md:text-xl leading-relaxed">
-                  Hello! I'm <span className="font-semibold text-blue-600">Jayesh Dhande</span>, a passionate third-year B.E. Information Technology student at Sinhgad Academy of Engineering, Pune. With a strong academic foundation and a current CGPA of <span className="font-bold text-purple-600">8.33</span>, I'm dedicated to turning innovative ideas into reality through code.
+                  Hello! I'm <span className="font-semibold text-blue-600">Jayesh Dhande</span>, a MERN Stack Developer passionate about building fast, modern, and user-focused web applications. I love turning ideas into functional products that look great and perform even better.
                 </p>
-                
+
                 <p>
-                  I specialize in building modern, responsive web applications and have hands-on experience with the <span className="font-semibold text-blue-600">MERN stack</span>. From concept to deployment, I've delivered several functional projects that showcase my ability to create clean, user-friendly solutions that solve real-world problems.
+                  I specialize in creating responsive full-stack solutions using <span className="font-semibold text-blue-600">MongoDB, Express.js, React.js, and Node.js</span>, backed by real-world experience developing production-ready applications during my Web Development Internship. I’ve built AI-driven platforms, news summarizers, and dynamic web apps that combine clean UI with powerful backend logic.
                 </p>
-                
+
                 <p>
-                  My passion lies in creating intuitive user experiences and writing clean, maintainable code. I'm always eager to learn new technologies and apply my skills to challenging projects that push the boundaries of what's possible on the web.
+                  I enjoy crafting smooth user experiences, writing clean and maintainable code, and constantly exploring new technologies. Whether working independently or collaborating with teams through Git and GitHub, my focus is on delivering solutions that are intuitive, scalable, and truly impactful.
                 </p>
+
               </div>
             </div>
+
           </div>
         </div>
+
       </div>
     </section>
   );

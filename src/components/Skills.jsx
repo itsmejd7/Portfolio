@@ -73,7 +73,13 @@ const Skills = () => {
       color: 'from-gray-500 to-gray-600',
       bgColor: 'bg-gray-50',
       borderColor: 'border-gray-200'
-    }
+    },{
+  name: 'Next.js',
+  logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg',
+  color: 'from-gray-700 to-black',
+  bgColor: 'bg-gray-50',
+  borderColor: 'border-gray-300'
+}
   ];
 
   useEffect(() => {
