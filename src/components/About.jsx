@@ -3,74 +3,57 @@ import Profile from '../assets/Profile.jpg';
 
 const About = () => {
   return (
-    <section id="about" className="py-16 md:py-20 bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-50 relative overflow-hidden">
-      <div className="absolute top-10 left-10 w-32 h-32 bg-gradient-to-r from-blue-200 to-purple-200 rounded-full opacity-20 blur-xl"></div>
-      <div className="absolute bottom-20 right-10 w-40 h-40 bg-gradient-to-r from-purple-200 to-pink-200 rounded-full opacity-20 blur-xl"></div>
-      <div className="absolute top-1/2 left-1/4 w-24 h-24 bg-gradient-to-r from-green-200 to-blue-200 rounded-full opacity-15 blur-lg"></div>
-      
+    <section id="about" className="section-shell py-16 md:py-24 bg-slate-50">
+      <div className="absolute inset-0 bg-grid opacity-20"></div>
       <div className="container mx-auto px-4 relative z-10">
-        <div className="text-center mb-12 md:mb-16">
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent mb-4">
-            About Me
-          </h2>
-          <div className="w-20 md:w-24 h-1 bg-gradient-to-r from-blue-500 to-purple-500 mx-auto rounded-full"></div>
-          <p className="text-gray-600 text-lg md:text-xl mt-6 max-w-2xl mx-auto">
-            Passionate developer crafting digital experiences with code and creativity
-          </p>
-        </div>
+        <div className="grid grid-cols-1 lg:grid-cols-[1.1fr_0.9fr] gap-10 items-center">
+          <div>
+            <p className="uppercase tracking-[0.3em] text-xs text-slate-500 mb-4">About</p>
+            <h2 className="text-3xl md:text-5xl font-semibold text-slate-900">
+              Full stack developer with a MERN focus.
+            </h2>
+            <p className="mt-5 text-base md:text-lg text-slate-600 leading-relaxed">
+              I build complete web apps using MongoDB, Express, React, and Node.js. I enjoy creating clean UIs,
+              writing reliable backend logic, and delivering projects that feel fast and polished.
+            </p>
+            <p className="mt-4 text-base md:text-lg text-slate-600 leading-relaxed">
+              I am currently a student and open to internships and collaborations where I can contribute
+              and keep growing as a developer.
+            </p>
 
-        <div className="max-w-6xl mx-auto">
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 lg:gap-12 mb-12">
-            
-            <div className="lg:col-span-1 flex justify-center lg:justify-start">
-              <div className="relative">
-                <div className="w-64 h-64 md:w-80 md:h-80 bg-gradient-to-br from-blue-400 via-purple-500 to-pink-500 rounded-3xl p-1 shadow-2xl">
-                  <div className="w-full h-full bg-white rounded-3xl overflow-hidden">
-                    <img 
-                      src={Profile}
-                      alt="Jayesh Dhande - IT Engineering Student"
-                      className="w-full h-full object-cover object-center"
-                      onError={(e) => {
-                        e.target.style.display = 'none';
-                        e.target.nextSibling.style.display = 'flex';
-                      }}
-                    />
-                    <div className="w-full h-full bg-gradient-to-br from-blue-400 via-purple-500 to-indigo-600 flex items-center justify-center" style={{display: 'none'}}>
-                      <div className="text-center text-white p-6">
-                        <div className="text-6xl mb-4">👨‍💻</div>
-                        <div className="text-xl font-bold mb-2">Jayesh Dhande</div>
-                        <div className="text-blue-100 text-sm">IT Engineering Student</div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div className="absolute -top-4 -right-4 w-8 h-8 bg-yellow-400 rounded-full animate-bounce"></div>
-                <div className="absolute -bottom-4 -left-4 w-6 h-6 bg-green-400 rounded-full animate-pulse"></div>
-                <div className="absolute top-1/2 -left-6 w-4 h-4 bg-red-400 rounded-full animate-ping"></div>
+            <div className="mt-8 grid grid-cols-2 md:grid-cols-3 gap-4 text-sm text-slate-600">
+              <div className="rounded-2xl border border-slate-200 bg-white/90 p-4">
+                <p className="text-xs uppercase tracking-wide text-slate-500">Focus</p>
+                <p className="mt-2 font-semibold text-slate-900">Web apps</p>
+              </div>
+              <div className="rounded-2xl border border-slate-200 bg-white/90 p-4">
+                <p className="text-xs uppercase tracking-wide text-slate-500">Stack</p>
+                <p className="mt-2 font-semibold text-slate-900">MERN + Tailwind</p>
+              </div>
+              <div className="rounded-2xl border border-slate-200 bg-white/90 p-4">
+                <p className="text-xs uppercase tracking-wide text-slate-500">Value</p>
+                <p className="mt-2 font-semibold text-slate-900">Quality, growth</p>
               </div>
             </div>
+          </div>
 
-            <div className="lg:col-span-2 space-y-6 md:space-y-8">
-              <div className="space-y-4 md:space-y-6 text-gray-700 leading-relaxed text-base md:text-lg">
-
-                <p className="text-lg md:text-xl leading-relaxed">
-                  Hello! I'm <span className="font-semibold text-blue-600">Jayesh Dhande</span>, a MERN Stack Developer passionate about building fast, modern, and user-focused web applications. I love turning ideas into functional products that look great and perform even better.
-                </p>
-
-                <p>
-                  I specialize in creating responsive full-stack solutions using <span className="font-semibold text-blue-600">MongoDB, Express.js, React.js, and Node.js</span>, backed by real-world experience developing production-ready applications during my Web Development Internship. I’ve built AI-driven platforms, news summarizers, and dynamic web apps that combine clean UI with powerful backend logic.
-                </p>
-
-                <p>
-                  I enjoy crafting smooth user experiences, writing clean and maintainable code, and constantly exploring new technologies. Whether working independently or collaborating with teams through Git and GitHub, my focus is on delivering solutions that are intuitive, scalable, and truly impactful.
-                </p>
-
+          <div className="relative max-w-sm justify-self-center lg:justify-self-end">
+            <div className="absolute -top-6 -left-6 h-16 w-16 rounded-2xl bg-teal-200/70"></div>
+            <div className="absolute -bottom-8 -right-4 h-20 w-20 rounded-full bg-amber-200/70"></div>
+            <div className="rounded-3xl border border-slate-200 bg-white/90 p-6 shadow-xl shadow-slate-900/10">
+              <div className="aspect-[3/4] overflow-hidden rounded-2xl">
+                <img
+                  src={Profile}
+                  alt="Jayesh Dhande portrait"
+                  className="h-full w-full object-cover"
+                />
+              </div>
+              <div className="mt-5 rounded-2xl border border-slate-200 bg-slate-50 p-4 text-sm text-slate-600">
+                Currently based in India. Open to remote roles and collaborations.
               </div>
             </div>
-
           </div>
         </div>
-
       </div>
     </section>
   );
